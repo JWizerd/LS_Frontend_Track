@@ -5,6 +5,15 @@ body {
   text-shadow: 0px 1px 2px #666;
 }
 
+#myself {
+  float: left;
+  margin: 0 30px;
+  box-shadow: 1px 1px 1px #666;
+  font-size: 80%;
+  text-align: center;
+  background-color: #999;
+}
+
 a {
   color: skyblue;
   background: transparent;
