@@ -27,3 +27,7 @@ ul {
 li {
   display: inline;
 }
+
+#radio-form {
+  display: inline;
+}
