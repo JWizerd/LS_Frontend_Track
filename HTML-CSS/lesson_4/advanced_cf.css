@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+  font-family: "Helvetica", sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h2, dd, span {
+  padding-bottom: 25px;
+  font-weight: bold;
+}
+
+span {
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+}
+
+form {
+  width: 600px;
+  box-sizing: border-box;
+  margin: 30px auto;
+  box-shadow: 1px 1px 1px 2px #666;
+}
+
+fieldset {
+  border: none;
+  padding: 30px;
+  margin-bottom: 2px;
+  border-left: 4px solid #cbcbca;
+  background-color: #ebebec;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #4667ae;
+  font-size: 14px;
+  width: 100%;
+  margin-right: 3px;
+}
+
+input[name*="name"] {
+  width: 49%;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  padding: 15px 30px;
+  background-color: #0066cc;
+  color: #fff;
+  width: 178px;
+  height: 47px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 30px;
+  display: block;
+  transition: ease-out .25s;
+}
+
+input[type="submit"]:hover {
+  background-color: #004489;
+  transition: ease .25s;
+}
+
+dt:first-of-type {
+  padding-top: 0px;
+}
+
+dt {
+  color: #666;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+
+dd {
+  margin-left: 0;
+}
+
+.partial-third {
+  width: 32.7%;
+  display: inline-block;
+}
+
+.partial-half {
+  width: 50%;
+  display: inline-block;
+  width: 49.5%;
+}

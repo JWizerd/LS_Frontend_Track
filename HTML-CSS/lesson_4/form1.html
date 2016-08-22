@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="form1.css">
+</head>
+<body>
+  <h1>Form Exercises</h1>
+
+  <!-- 1. Create a contact form that collects the user's first name, last name, email address, and phone number. Be sure to use appropriate input types, and prevent iOS devices from modifying the email input. -->
+
+  <form action="" method="post">
+    <h1>FORM #1</h1>
+  <fieldset>
+    <dl>
+      <dt>
+        <label for="first_name">First Name</label>
+      </dt>
+      <dd>
+        <input type="text" name="first_name" id="first_name" />
+      </dd>
+      <dt>
+        <label for="last_name">Last Name</label>
+      </dt>
+      <dd>
+        <input type="text" name="last_name" id="last_name" />
+      </dd>
+      <dt>
+        <label for="email">Email Address</label>
+      </dt>
+      <dd>
+        <input type="email" name="email" id="email" autocomplete="off" autocorrect="off" autocapitalize="off" />
+      </dd>
+      <dt>
+        <label for="phone">Phone Number</label>
+      </dt>
+      <dd>
+        <input type="tel" name="phone" id="phone" />
+      </dd>
+    </dl>
+    <input type="submit" value="Send" />
+  </fieldset>
+</form>
+
+<!-- Add a select box to the form for phone type, with options of home, business, and mobile. Make sure the home option is pre-selected. -->
+
+<form action="" method="post">
+  <h1>FORM #2</h1>
+  <dl>
+    <dt><label for="phone_type">Phone:</label></dt>
+    <dd>
+      <select name="phone_type" id="phone_type">
+        <option value="home" selected>Home</option>
+        <option value="work">Work</option>
+        <option value="mobile">Mobile</option>
+      </select>
+    </dd>
+  </dl>
+  <input type="submit" value="send">
+</form>
+
+<!-- Create a form for filtering news articles by a single category and any number of selected tags. Use radios for the category and checkboxes for tags. Make sure your form method is get to ensure the user can save and share the filtered URL.
+
+Categories: Core, Plugins and Libraries, Conventions, Reviews, Opinion, People
+
+Tags: HTML, CSS, Javascript, Ruby, Rails, Python, Django -->
+
+<form action="" method="get">
+  <h1>FORM #3</h1>
+  <fieldset>
+    <h3>Categories:</h3>
+      <ul>
+        <li>
+          <label>
+            <input type="radio" name="category" value="core">
+            Core
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="libraries">
+            Libraries
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="reviews">
+            Reviews
+          </label>
+        </li>
+      </ul>
+    <h2>Tags:</h2>
+    <ul>
+      <li>
+        <label>
+          <input type="checkbox" name="html">
+          HTML
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="css">
+          CSS
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="javascript">
+          JavaScript
+        </label>
+      </li>
+    </ul>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+  </fieldset>
+</form>
+
+<!-- Convert the radios and checkboxes in the filter form to selects. Make sure you retain the ability to select any number of tags. -->
+
+<form action="" method="get">
+  <h1>FORM #4</h1>
+  <fieldset>
+    <h3>Categories:</h3>
+      <select class="categories" name="categories">
+        <option value="core">Core</option>
+        <option value="libraries">Libraries</option>
+        <option value="stuff">Stuff</option>
+      </select>
+    <h2>Tags:</h2>
+      <select class="tags" name="tags" multiple>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+      </select>
+    <input type="submit" value="submit">
+    <!-- 5. Provide the user with a way to reset the filter form. -->
+    <input type="reset" value="reset">
+  </fieldset>
+</form>
+
+</body>
+</html>

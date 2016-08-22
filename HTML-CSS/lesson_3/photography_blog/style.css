@@ -1,0 +1,151 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+  background: linear-gradient( to bottom, #d2dbbe, #fcfef5);
+	background-repeat: no-repeat;
+  font: normal 18px "Helvetica", sans-serif;
+	color: #526e7b;
+}
+
+header, main, footer {
+	position: relative;
+	margin: 0 auto;
+	width:75%;
+	font-size: 18px;
+}
+
+main {
+	box-sizing: border-box;
+	background-color: #fff;
+	padding: 30px;
+	box-shadow: 0px 1px 10px #333;
+}
+
+article {
+	padding-top: 45px;
+}
+
+header {
+	padding: 20px 0;
+	overflow: hidden;
+}
+
+h1 {
+	background: transparent url("images/camera.png") 0 0 no-repeat;
+	color: #193441;
+	font-size: 36px;
+	padding: 50px 0 15px 115px;
+	float:left;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+p, h2 {
+	padding-bottom: 28px;
+}
+
+nav {
+	float:right;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	display: block;
+	padding: 20px 0;
+	text-align: center;
+	color: #91aa9d;
+	width: 127px;
+	background-color: #fcfff5;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+#active {
+	background-color: #91aa9d;
+	color: #fcfff5;
+}
+
+#hero img {
+	width:100%;
+}
+
+article {
+	overflow: hidden;
+}
+
+article img {
+	float: right;
+	padding-left: 28px;
+}
+
+footer {
+	margin-bottom: 36px;
+	margin-top: 18px;
+}
+
+.copyright {
+	font-size: 14px;
+}
