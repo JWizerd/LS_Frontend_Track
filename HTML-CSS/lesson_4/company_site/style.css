@@ -225,7 +225,11 @@ footer {
 
  figure {
 	 display: inline-block;
-	 margin-right: 64px;
+	 width: 24%;
+ }
+
+ figure h3 {
+	 text-align: center;
  }
 
  figure:last-child {
@@ -238,6 +242,57 @@ footer {
  }
 
  .team-members {
-	 display:flex;
-	 justify-content: center;
+	 width: 100%;
  }
+
+ /* ==============================
+   MEDIA QUERIES
+  ============================== */
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+	.icon {
+		margin-right: 60px;
+	}
+	article {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 999px) {
+	article, header {
+		width: 90%;
+	}
+
+	article, header, main, footer {
+		padding: 20px 0;
+	}
+	.icon {
+		margin-right: 10px;
+	}
+	.social_icons {
+		padding: 47px 0 0 0;
+		margin: 0 auto;
+	}
+	.logo {
+		width: 150px;
+		margin: 0;
+		float:left;
+	}
+
+	nav ul li{
+		display: block;
+		margin-right: 0;
+		text-align: right;
+	}
+
+	header {
+		overflow: hidden;
+		padding: 20px 0 20px 0;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	figure {
+		width: 100%;
+	}
+}
