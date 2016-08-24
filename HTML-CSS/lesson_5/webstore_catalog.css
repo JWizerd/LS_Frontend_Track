@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: yellow;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header, section {
+  margin: 0 auto 32px auto;
+  width: 63%;
+  font-size: 38px;
+  padding: 38px 28px;
+}
+
+header {
+  color: white;
+  background: skyblue;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+section {
+  color: #333;
+  background-color: #ececec;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  text-align: left;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+h1, h2 {
+  width: 100%;
+  font-weight: bold;
+}
+
+figure {
+  float: left;
+  width: 22%;
+  padding: 15px;
+  margin: 0 0 2% 2%;
+  background: #ffffff;
+  box-sizing: border-box;
+  height: 222px;
+}
+
+figcaption {
+  font-size: 18px;
+}
+
+img {
+  height: 150px;
+}
+
+article {
+  text-align: center;
+}
+
+input:checked + figure img {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  z-index: 2;
+  width: 400px;
+  height: auto;
+  margin: 0 0 0 -200px;
+}
+
+input:checked + figure:before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+  background: rgba(0, 0, 0, .4);
+}
+
+input[type="checkbox"] {
+  display:none;
+}
+
+li {
+  width: 25%;
+}
