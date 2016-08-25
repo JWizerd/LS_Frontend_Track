@@ -240,26 +240,26 @@ h3 {
   2.2 Navigation
 =======================*/
 
-nav {
+#main-navbar {
   width: 50%;
   margin: 0 auto;
   padding: 140px 0 50px 0;
 }
 
-nav ul {
+#main-navbar ul {
   text-align: center;
 }
 
-nav ul li {
+#main-navbar ul li {
   display: inline-block;
   margin-right: 7.33%;
 }
 
-nav ul li:last-child {
+#main-navbar ul li:last-child {
   margin-right: 0;
 }
 
-nav ul li a {
+#main-navbar ul li a {
   color: #fff;
   text-transform: uppercase;
 }
@@ -292,4 +292,14 @@ aside {
   background-color: #f6f7f8;
   overflow: hidden;
   padding: 38px;
+}
+
+#sidebar-nav ul {
+  padding-top: 35px;
+}
+
+#sidebar-nav ul li a {
+  color: #3d3d3d;
+  font-size: 14px;
+  text-transform: uppercase;
 }
