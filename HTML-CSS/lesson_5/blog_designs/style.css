@@ -77,6 +77,7 @@ table {
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -163,6 +164,7 @@ h3 {
 #rectangles {
   width: 42%;
   margin: 40px auto 0 auto;
+  text-align: left;
 }
 
 .line-style {
@@ -262,6 +264,20 @@ h3 {
 #main-navbar ul li a {
   color: #fff;
   text-transform: uppercase;
+  -webkit-transition: ease-in .3s;
+  -moz-transtion: ease-in .3s;
+  transition: ease-in .3s;
+}
+
+#main-navbar ul li a.active {
+  color: #32ffe3;
+}
+
+#main-navbar ul li a:hover {
+  color: #ff643a;
+  -webkit-transition: ease-out .3s;
+  -moz-transtion: ease-out .3s;
+  transition: ease-out .3s;
 }
 
 /*======================
