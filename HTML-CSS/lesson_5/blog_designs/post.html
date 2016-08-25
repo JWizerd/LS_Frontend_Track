@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- =========================
+   HEADER
+  =========================== -->
   <header class="fluid-container-black">
     <h1 id="site-title"><a href="index.html">Impact Studio Blog</a></h1>
     <!-- rectangle header design -->
@@ -30,17 +33,52 @@
     </nav>
   </header>
   <main class="container">
+    <!-- =========================
+     POST
+    =========================== -->
     <section class="content">
       <article class="posts">
         <h2><a href="post.html">Post Headline</a></h2>
         <p class="details">Written by <a href="">Shane Riley</a> on <time datetime="2014-02-15">Feb,15,2014</time></p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eum quisquam recusandae non at deserunt itaque ipsa neque consectetur iure, officia atque saepe quis numquam optio iste reiciendis error aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eum quisquam recusandae non at deserunt itaque ipsa neque consectetur iure, officia atque saepe quis numquam optio iste reiciendis error aliquid.</p>
       </article>
-      <article class="posts comments">
-        <h2>Comments</h2>
-        <p class="details"><a href="">Kevin</a> on Feb,15,2014</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-      </article>
+      <!-- =========================
+       COMMENTS
+      =========================== -->
+      <section>
+        <article class="posts comments">
+          <h2>Comments</h2>
+          <img src="images/kevin.png" alt="kevin"><p class="details"><a href="">Kevin</a> on Feb,15,2014</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </article>
+        <article class="posts comments">
+          <img src="images/kevin.png" alt="kevin"><p class="details"><a href="">Kevin</a> on Feb,15,2014</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </article>
+        <!-- =========================
+         COMMENT FORM
+        =========================== -->
+        <article class="posts comment-form">
+          <h2>Post Comments</h2>
+          <form action="" method="post">
+            <fieldset>
+              <label>
+              <input type="text" name="name" id="name" placeholder="Enter your Name">
+              </label>
+              <label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email Address">
+              </label>
+              <label>
+                <textarea name="comment" id="comment" placeholder="Enter your Comments" rows="10"></textarea>
+              </label>
+              <input type="submit" value="submit" class="button">
+            </fieldset>
+          </form>
+        </article>
+      </section>
+      <!-- =========================
+       SIDEBAR
+      =========================== -->
       <aside>
         <section class="sidebar-section">
           <h3>Categories</h3>
@@ -68,10 +106,13 @@
       </aside>
     </section>
   </main>
+  <!-- =========================
+   FOOTER
+  =========================== -->
   <footer class="container">
     <section class="footer content">
       <hr>
-      <p>&copy; 2014 <span>impactstud.io<span></p>
+      <p>&copy; 2014 <span>impactstud.io</span></p>
     </section>
   </footer>
 </body>
